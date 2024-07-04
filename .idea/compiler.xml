@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.32/17d46b3e205515e1e8efd3ee4d57ce8018914163/lombok-1.18.32.jar" />
+        </processorPath>
+        <module name="middleware.transactions-service.main" />
+        <module name="middleware.attestation-monitoring-service.main" />
+        <module name="middleware.terminal-management-service.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="21">
+      <module name="DiscoveryService.ApiGateway" target="21" />
+      <module name="DiscoveryService.ApiGateway.main" target="21" />
+      <module name="DiscoveryService.ApiGateway.test" target="21" />
+      <module name="DiscoveryService.DiscoveryService" target="21" />
+      <module name="DiscoveryService.DiscoveryService.main" target="21" />
+      <module name="DiscoveryService.DiscoveryService.test" target="21" />
+      <module name="DiscoveryService.TerminalManagementService" target="21" />
+      <module name="DiscoveryService.TerminalManagementService.main" target="21" />
+      <module name="DiscoveryService.TerminalManagementService.test" target="21" />
+      <module name="DiscoveryService.TransactionsService" target="21" />
+      <module name="DiscoveryService.TransactionsService.main" target="21" />
+      <module name="DiscoveryService.TransactionsService.test" target="21" />
+      <module name="middleware.ams" target="21" />
+      <module name="middleware.ams.main" target="21" />
+      <module name="middleware.ams.test" target="21" />
+      <module name="middleware.ApiGateway.main" target="21" />
+      <module name="middleware.ApiGateway.test" target="21" />
+      <module name="middleware.DiscoveryService.main" target="21" />
+      <module name="middleware.DiscoveryService.test" target="21" />
+      <module name="middleware.TerminalManagementService.main" target="21" />
+      <module name="middleware.TerminalManagementService.test" target="21" />
+      <module name="middleware.TransactionsService.main" target="21" />
+      <module name="middleware.TransactionsService.test" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

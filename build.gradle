@@ -1,0 +1,50 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.3.1'
+	id 'io.spring.dependency-management' version '1.1.5'
+}
+
+
+allprojects {
+	tasks.register("logSubmoduleStatus") {
+		doLast {
+			println "Building module: ${project.name}"
+		}
+	}
+
+	tasks.register("logSubmoduleStatusComplete") {
+		doLast {
+			println "Completed module: ${project.name}"
+		}
+	}
+}
+
+subprojects {
+	afterEvaluate {
+		tasks.matching { it.name == 'build' }.configureEach {
+			doFirst {
+				println "Starting build for submodule: ${project.name}"
+			}
+			doLast {
+				println "Finished build for submodule: ${project.name}"
+			}
+		}
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+tasks.named('bootJar') {
+	mainClass.set('com.geidea.discovery.service.DiscoveryServiceApplication')
+}
+
+
+bootJar {
+	enabled = false
+}
+
+bootBuildImage{
+	enabled = false
+}

@@ -1,0 +1,6 @@
+rootProject.name = 'middleware'
+include 'api-gateway'
+include 'discovery-service'
+include 'terminal-management-service'
+include 'transactions-service'
+include 'attestation-monitoring-service'
